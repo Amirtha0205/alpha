@@ -1,0 +1,60 @@
+.FooterCover {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.List a{
+    text-decoration: none;
+    color:white;
+}
+.about {
+    width: 25%;
+    padding: 3%;
+}
+.about p{
+    margin-top: 5%;
+}
+
+.copywrite {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0%;
+}
+
+
+.ListProductsBy {
+    margin-top:3%;
+}
+/* .ListProductsBy h2 {
+    box-shadow: 3px 3px 1px 1px orangered ;
+    padding: 0.005%;
+}
+.aboutheading{
+    padding: 3%;
+    box-shadow: 3px 3px 1px 1px orangered ;
+} */
+.SocialIcon svg{
+    margin: 3%;
+   
+}
+.SocialIcon{
+    margin: 5%;
+}
+.SocialIcon svg{
+    padding: 3%;
+    margin-top: 5%;
+    background-color: white;
+    color:black;
+    border-radius: 25%;
+}
+@media only screen and (max-width: 600px) {
+   .about {
+      display: none;
+      width: 100%;
+    }
+  }
+

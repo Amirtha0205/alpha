@@ -1,0 +1,31 @@
+.products-submenu {
+  position: absolute;
+  margin: 5px;
+  top:10vh;
+}
+
+.products-submenu li {
+  color: orangered;  
+  /* background-color: orangered; */
+  background-color: antiquewhite;
+  padding: 8px;
+  list-style: none;
+}
+.products-submenu-noshow{
+   display: none;
+}
+.products-submenu a {
+  text-decoration: none;
+  list-style: none;  
+  padding: 5px;
+}
+
+.medical-equipments {
+ display: block;
+ width:100%;
+ 
+}
+/* .products-submenu li:hover {
+  background-color: rgb(175, 87, 0);
+  
+ } */
