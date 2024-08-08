@@ -9,7 +9,7 @@ import Scansworld from '../assests/scansworld.png'
 import ARC_Fertility from '../assests/ARC_IVF.png';
 import apolloHospital from '../assests/apollohospital.jpg';
 import apolloHospitals from '../assests/apollohospitals.jpg';
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import LedOTLight from '../assests/LedOTLight.jpg';
 import OTtable from '../assests/OTtable.jpg';
 import boylesapparatus from '../assests/boylesApparatus.png'
@@ -24,10 +24,9 @@ import 'slick-carousel/slick/slick.css';
 import Icons from './Icons.js';
 
 function Home() {
-    useEffect = (() => {
-        AOS.init()
-    }, [])
-    AOS.init();
+    // useEffect = (() => {
+    //     AOS.init()
+    // }, [])
 
     function NextArrow(props) {
         const { className, style, onClick } = props;
@@ -99,7 +98,7 @@ function Home() {
     return (
         <>
             {/* <div classsName='Hospitals-Section'><h1>Meet Mr. Danakotti</h1><h1>Meet Mr. Danakotti</h1></div> */}
-            <h1><center>Our products</center></h1>
+            <center><h1>Highlights from our Range</h1><div className="Supply"></div></center>
 
             <Slider className="slider-container" {...settings}>
                 <div ><center> <h3>Led-OT-Light</h3><img className='Equipments-Carousel' src={LedOTLight} alt='Led-OT-Light' /></center></div>
@@ -130,10 +129,8 @@ function Home() {
             {/* </div> 
 
             </div>*/}
-            <Icons/>
-            
+            <Icons/>            
             <Footer />
-
         </>
     );
 }

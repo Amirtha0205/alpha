@@ -29,29 +29,22 @@
 .ListProductsBy {
     margin-top:3%;
 }
-/* .ListProductsBy h2 {
-    box-shadow: 3px 3px 1px 1px orangered ;
-    padding: 0.005%;
-}
-.aboutheading{
-    padding: 3%;
-    box-shadow: 3px 3px 1px 1px orangered ;
-} */
-.SocialIcon svg{
-    margin: 3%;
-   
-}
+
+
 .SocialIcon{
     margin: 5%;
 }
 .SocialIcon svg{
-    padding: 3%;
+    margin: 3%;
+    padding: 1%;
     margin-top: 5%;
+    width: 25px;
+    height: auto;
     background-color: white;
     color:black;
     border-radius: 25%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1010px) {
    .about {
       display: none;
       width: 100%;
