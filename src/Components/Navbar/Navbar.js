@@ -1,91 +1,99 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 import AlphaTech from '../assests/Alpha-Technologies-LOGO.jpg';
-
-function Navbar() {
-    const [openMenu, setOpenMenu] = useState(null);
-
-    const handleMenuToggle = (menu) => {
-        setOpenMenu(openMenu === menu ? null : menu);
-    };
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+function Navba() {
     return (
-        <nav className="navbar">
-            <img className="navbar-logo" src={AlphaTech} alt='Alpha Technologies Logo' />
-            <ul className="navbar-menu">
-                <li className="navbar-item">
-                    <a href="/" className="navbar-link">Home</a>
-                </li>
-                <li className="navbar-item">
-                    <a className="navbar-link" onClick={() => handleMenuToggle('menu1')}>Products</a>
-                    {openMenu === 'menu1' && (
-                        <ul className="dropdown-menu">
-                            {/* <li className="dropdown-item">
-                                <a href="#" className="dropdown-link">Products by </a>
-                            </li> */}
-                            <li className="dropdown-item">
-                                <a className="dropdown-link">Products by Category</a>
-                                <ul className="dropdown-menu">
-                                    <li className="dropdown-item">
-                                        <a href="/Best-OT-Equipments-in-chennai" className="dropdown-link">OT Equipments</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">ICU Equipments</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Laboratory Equipments</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Cardiology Equipments</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">POCT Products</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Ultra sounds</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Echo sounds</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="dropdown-item">
-                                <a href="#" className="dropdown-link">Products by Brand</a>
-                                <ul className="dropdown-menu">
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Comen</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Mindray</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Concept Biomedicals</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Gretin</a>
-                                    </li>
-                                    <li className="dropdown-item">
-                                        <a href="#" className="dropdown-link">Proton</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    )}
-                </li>
-                <li className="navbar-item">
-                    <a href="/About-The-Best-Medical-Equipment-Provider" className="navbar-link">About</a>
-                </li>
-                <li className="navbar-item">
-                    <a href="/Services-Alpha-Technologies-Provide" className="navbar-link">Services</a>
-                </li>
-                <li className="navbar-item">
-                    <a href="/Contact-The-Best-Medical-Equipment-Provider" className="navbar-link">Contact</a>
-                </li>
-               
-            </ul>
-        </nav>
-    );
-}
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+          <Container>
+            <Navbar.Brand href="/"><img className="Alpha_technogies_logo" src={AlphaTech} /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/">Home</Nav.Link>
+                <DropdownButton
+                  as='ButtonGroup'
+                  key='down'
+                  id='dropdown-button-drop-down'
+                  drop='down'
+                  variant="secondary"
+                  title={` Products `}>  
+                            
+                  <DropdownButton
+                  as='ButtonGroup'
+                  key='start'
+                  id='dropdown-button-drop-start'
+                  drop='start'
+                  variant="secondary"
+                  title={` Products By Category `}>
 
-export default Navbar;
+                     <Dropdown.Item className='btn-group dropright' href="/Best-OT-Equipments-in-Chennai">
+                     OT Equipments
+                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="/Best-ICU-Equipments-in-Chennai">                    
+                  ICU Equipments
+                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="/Best-Laboratory-Equipments-in-Chennai">
+                  Laboratory Equipments
+                  </Dropdown.Item>
+                  <Dropdown.Item className='btn-group dropright' href="/Best-Cardiology-Equipments-in-Chennai">
+                  Cardiology Equipments
+                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="">
+                  POCT Products
+                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="">
+                  Ultra sounds
+                  </Dropdown.Item>
+                  <Dropdown.Item className='btn-group dropright' href="">
+                  Echo sounds
+                  </Dropdown.Item>
+                  </DropdownButton>
+                            
+    
+                  <DropdownButton
+                  as='ButtonGroup'
+                  key='start'
+                  id='dropdown-button-drop-start'
+                  drop='start'
+                  variant="secondary"
+                  title={` Products By Brand `}>
+                     <Dropdown.Item className='btn-group dropright' href="#action/3.2">
+                    Comen
+                  </Dropdown.Item> 
+                  <Dropdown.Item className='btn-group dropright' href="#action/3.2">
+                    Mindray
+                  </Dropdown.Item> 
+                  <Dropdown.Item className='btn-group dropright' href="#action/3.2">
+                  Concept Biomedicals
+                  </Dropdown.Item> 
+                  <Dropdown.Item className='btn-group dropright' href="#action/3.2">
+                    Gretin
+                  </Dropdown.Item>
+                  <Dropdown.Item className='btn-group dropright' href="#action/3.2">
+                    Proton
+                  </Dropdown.Item>
+                  </DropdownButton>
+                 
+                  </DropdownButton>   
+                <Nav.Link href="/About-The-Best-Medical-Equipment-Provider">About</Nav.Link>
+                                    
+              </Nav>
+              <Nav>
+                <Nav.Link href="/Services-Alpha-Technologies-Provide">Services</Nav.Link>
+                <Nav.Link eventKey={2} href="/Contact-The-Best-Medical-Equipment-Provider">
+                  Contact
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      );
+    }
+
+
+
+
+export default Navba;

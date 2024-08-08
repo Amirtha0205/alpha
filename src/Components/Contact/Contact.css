@@ -1,7 +1,9 @@
     .AlphaTechnologiesbusinessHours span {
         padding: 5px;
     }
-
+    center h2 {
+        margin-top: 20px;
+    }
     .AlphaTechnologies {
         font-weight: bold;
     }
@@ -21,7 +23,7 @@
         width: 200px;
         background-color: orangered;
         align-items: center;
-        margin-top: -15px;
+        margin-top: -13px;
         text-align: center;
         justify-content: center;
     }
@@ -67,3 +69,5 @@
         /* Safari 3-8 */
         transform: scale(1.2);
     }
+
+   

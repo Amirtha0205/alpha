@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -17,8 +16,8 @@ function Footer() {
 
                     <ul className='List'> <a href="/Best-OT-Equipments-in-chennai"> OT Equipments </a> </ul>
                     <ul className='List'>  <a href="/Best-ICU-Equipments-in-chennai">ICU Equipments </a>  </ul>
-                    <ul className='List'>  Laboratory Equipments   </ul>
-                    <ul className='List'>  Cardiology Equipments   </ul>
+                    <ul className='List'> <a href="/Best-Laboratory-Equipments-in-chennai"> Laboratory Equipments</a>   </ul>
+                    <ul className='List'> <a href="/Best-Cardiology-Equipments-in-chennai"> Cardiology Equipments </a>  </ul>
                     <ul className='List'>  POCT products   </ul>
                     <ul className='List'>  Ultra sounds  </ul>
                     <ul className='List'>  Echo machines  </ul>
