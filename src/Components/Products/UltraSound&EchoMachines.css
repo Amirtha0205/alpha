@@ -1,0 +1,35 @@
+/* .UltraSound{
+    margin-top: 5%;
+    width:50%;
+    display: flex;
+}
+.UltraSound_Details{
+    display: flex;
+}
+.UltraSound_heading{
+    display: block;
+} */
+
+.UltraSound {
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+.UltraSound_Details {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+}
+.Document {
+    flex: 1; /* Take up remaining space */
+}
+.Document iframe {
+    width: 90%;
+    /* padding: 20px; */
+    margin:20px;
+    height: 500px;
+    background-color:antiquewhite;
+}
+.Downloadbrochure{
+    display: block;
+    flex: 1; 
+    background-color: orangered;
+}

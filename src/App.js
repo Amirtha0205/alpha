@@ -10,6 +10,8 @@ import Services from './Components/services/Services';
 import Home from './Components/Home/Home';
 import LaboratoryEquipments from './Components/Products/LaboratoryEquipments';
 import CardiologyEquipments from './Components/Products/CardiologyEquipments';
+import POCTProducts from './Components/Products/POCTProducts';
+import UltraSound from './Components/Products/UltraSound&EchoMachines';
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
      <Route path="/Best-ICU-Equipments-in-chennai" exact element={<ICUEquipments/>} /> 
      <Route path="/Best-Cardiology-Equipments-in-chennai" exact element={<CardiologyEquipments/>} /> 
      <Route path="/About-The-Best-Medical-Equipment-Provider" exact element={<About/>} /> 
-     <Route path="//Best-Laboratory-Equipments-in-Chennai" exact element={<LaboratoryEquipments/>} /> 
-    <Route path="/Contact-The-Best-Medical-Equipment-Provider" exact element={<Contact/>} />
+     <Route path="/Best-Laboratory-Equipments-in-Chennai" exact element={<LaboratoryEquipments/>} /> 
+     <Route path="/Best-POCT-Products-in-Chennai" exact element={<POCTProducts/>} /> 
+     <Route path="/Best-Ultrasound-Echo-Machines-in-Chennai" exact element={<UltraSound/>} /> 
+     <Route path="/Contact-The-Best-Medical-Equipment-Provider" exact element={<Contact/>} />
     <Route path="/Services-Alpha-Technologies-Provide" exact element={<Services/>} />
     <Route path="/" exact element={<Home/>} />
    

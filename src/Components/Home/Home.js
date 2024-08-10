@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Slider from 'react-slick';
 import './Home.css';
+import WhyChooseUs from './WhyChooseUs.js';
 import IswaryaFertility from '../assests/IswaryaFertility.png';
 import CMCVellore from '../assests/Christian_MedicalCollegeHospitalVelloreLogo.png';
 import Scansworld from '../assests/scansworld.png'
@@ -102,11 +103,11 @@ function Home() {
 
             <Slider className="slider-container" {...settings}>
                 <div ><center> <h3>Led-OT-Light</h3><img className='Equipments-Carousel' src={LedOTLight} alt='Led-OT-Light' /></center></div>
-                <div > <center><h3>Operatoring-Theater Table</h3><img className='Equipments-Carousel' src={OTtable} alt='OT-Table' /></center></div>
-                <div > <center><h3>Surgical Diathermy</h3> <img className='Equipments-Carousel' src={surgical} alt='Surgical Diathermy' /></center></div>
-                <div ><center> <h3>Boyles Apparatus</h3> <img className='Equipments-Carousel' src={boylesapparatus} alt='boyles-Apparatus' /></center></div>
                 <div ><center> <h3>Examination Light</h3><img className='Equipments-Carousel' src={ExaminationLight} alt='Examination Light' /></center></div>
-            </Slider>
+                 <div > <center><h3>Surgical Diathermy</h3> <img className='Equipments-Carousel' src={surgical} alt='Surgical Diathermy' /></center></div>
+                 <div > <center><h3>Operatoring-Theater Table</h3><img className='Equipments-Carousel' src={OTtable} alt='OT-Table' /></center></div>
+                <div ><center> <h3>Boyles Apparatus</h3> <img className='Equipments-Carousel' src={boylesapparatus} alt='boyles-Apparatus' /></center></div>
+                 </Slider>
             {/* <div className='Happy_clients'>
 
                 <div className='Hospitals-Details'>
@@ -129,6 +130,7 @@ function Home() {
             {/* </div> 
 
             </div>*/}
+            <WhyChooseUs/>
             <Icons/>            
             <Footer />
         </>

@@ -17,7 +17,7 @@ button.btn-secondary {
 
 @media (max-width: 992px) {
     a.navbar-brand {
-        width: 85%;
+        width: 80%;
     }
     .navbar-brand img{
         height:auto;

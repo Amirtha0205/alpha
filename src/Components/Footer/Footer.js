@@ -18,18 +18,17 @@ function Footer() {
                     <ul className='List'>  <a href="/Best-ICU-Equipments-in-chennai">ICU Equipments </a>  </ul>
                     <ul className='List'> <a href="/Best-Laboratory-Equipments-in-chennai"> Laboratory Equipments</a>   </ul>
                     <ul className='List'> <a href="/Best-Cardiology-Equipments-in-chennai"> Cardiology Equipments </a>  </ul>
-                    <ul className='List'>  POCT products   </ul>
-                    <ul className='List'>  Ultra sounds  </ul>
-                    <ul className='List'>  Echo machines  </ul>
+                    <ul className='List'> <a href="/Best-POCT-Products-in-Chennai"> POCT products </a>   </ul>
+                    <ul className='List'>  <a href="/Best-Ultrasound-Echo-Machines-in-Chennai"> Ultra and Echo sounds </a> </ul>
                 </div>
                 <div className='ListProductsBy'>
                     <ul><h2>Products by Brand</h2></ul>
 
-                    <ul className='List'>  Comen   </ul>
-                    <ul className='List'>  Mindray   </ul>
-                    <ul className='List'>  Concept Biomedicals   </ul>
-                    <ul className='List'>  Gretin   </ul>
-                    <ul className='List'>  Proton   </ul>
+                    <ul className='List'> <a href=""> Comen</a>   </ul>
+                    <ul className='List'> <a href=""> Mindray </a>  </ul>
+                    <ul className='List'> <a href=""> Concept Biomedicals </a>  </ul>
+                    <ul className='List'> <a href=""> Gretin  </a> </ul>
+                    <ul className='List'> <a href=""> Proton  </a> </ul>
                 </div>
                 <div className='SocialIcon'>
                     <h2 >Follow us on:</h2>
