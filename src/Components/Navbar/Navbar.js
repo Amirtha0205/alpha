@@ -12,7 +12,7 @@ function Navba() {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand href="/"><img className="Alpha_technogies_logo" src={AlphaTech} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img className="Alpha_technogies_logo" alt="Alpha_technogies_logo" src={AlphaTech} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -42,14 +42,12 @@ function Navba() {
                   </Dropdown.Item>
                   <Dropdown.Item className='btn-group dropright' href="/Best-Cardiology-Equipments-in-Chennai">
                   Cardiology Equipments
-                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="">
+                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="/Best-POCT-Products-in-Chennai">
                   POCT Products
-                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="">
-                  Ultra sounds
+                  </Dropdown.Item> <Dropdown.Item className='btn-group dropright' href="/Best-Ultrasound-Echo-Machines-in-Chennai">
+                  Ultrasound and Echo Machines
                   </Dropdown.Item>
-                  <Dropdown.Item className='btn-group dropright' href="">
-                  Echo sounds
-                  </Dropdown.Item>
+                 
                   </DropdownButton>
                             
     
